@@ -7,13 +7,20 @@
 html, body {
     height: 100%;
     scroll-behavior: smooth;
+    font-family: Montserrat, serif;
 }
 
 body {
-    font-family: "Gill Sans", sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-image:url('/src/main/resources/tree.jpg'), linear-gradient(
+            rgb(215, 255, 215), rgb(173, 255, 173, 0.7)
+    );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: ;
 }
 
 .header {
@@ -24,29 +31,39 @@ body {
     line-height: 1.3; /* Optional: Increase line height to add more space vertically */
     text-align: center;
 }
-
 .nav {
     display: flex;
     justify-content: center;
     background: #adffad;
-    padding: 20px;
+    padding: 20px 10px; /* Initial padding */
+    position: relative; /* Fix the navbar to the top of the page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure navbar stays on top of other elements */
 }
+
 
 .nav a {
     color: #514040;
     text-decoration: none;
     padding: 10px 20px;
 }
-
 .nav a:hover {
     background: #d7ffd7;
-    transform: scale(115%);
+    border-radius: 17%;
+    transform: scale(110%);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-/* When scrolling, navbar shrinks */
-.nav.shrink {
-    padding: 10px 10px; /* Reduced padding */
-    background: #9cda9c; /* Optionally change background color */
+.topMenu {
+    transition: transform 0.7s ease, opacity 0.7s ease; /* Smooth transition for both transform and opacity */
+}
+
+.topMenu.hidden {
+    transform: translateY(-100%); /* Moves the navbar out of view */
+    transition: transform 0.7s ease, opacity 0.7s ease;
+    opacity: 0; /* Optionally make it transparent */
 }
 
 .content {
@@ -56,28 +73,17 @@ body {
     justify-content: center; /* Centers content vertically */
     align-items: center; /* Centers content horizontally */
     padding: 20px;
-    margin-bottom: 5vh;
-    margin-top: 5vh;
 }
 
 .Boxes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15vh;
+    gap: 10vh;
     justify-items: center;
     align-items: center;
     width: 100%;
     margin: 0 auto;
 }
-
-
-@media (max-width: 1024px) {
-    .Boxes {
-        grid-template-columns: 1fr;
-        gap: 10vh;
-    }
-}
-
 
 @media (max-width: 768px) {
     .Boxes {
