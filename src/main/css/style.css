@@ -17,7 +17,7 @@ body {
     min-height: 100vh;
     background-image:url('/src/main/resources/tree.png');
     background-size: 100%;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
 }
 
@@ -93,7 +93,7 @@ body {
 }
 
 .box {
-    width: 65vh;
+    width: 68vh;
     height: 80vh;
     border-radius: 14%;
     background-color: #adffad;
