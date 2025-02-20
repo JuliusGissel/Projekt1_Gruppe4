@@ -1,18 +1,18 @@
-/* Sørger for, at kontaktsektionen fylder hele viewportens højde */
+/* Centrering af indhold på siden */
 .content {
     display: flex;
-    justify-content: center;  /* Centrerer horisontalt */
-    align-items: center;      /* Centrerer vertikalt */
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     padding: 20px;
 }
 
-/* Styling af kontaktsektionen */
 .section-header {
     text-align: center;
     margin-bottom: 30px;
 }
 
+/* Centrering og styling af kasse i midten */
 .container {
     max-width: 800px;
     width: 100%;
@@ -22,7 +22,7 @@
     box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Kontakt-info styling */
+/* Kontakt info styling */
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -77,7 +77,7 @@
     color: #999;
 }
 
-/* Flyt label op, når der er input */
+/* Fjern tekst inde i box når der kommer et input */
 .input-box input:focus + span,
 .input-box textarea:focus + span,
 .input-box input:not(:placeholder-shown) + span,
