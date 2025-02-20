@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image:url('/src/main/resources/tree.png');
+    background-image:url('/src/main/resources/tree2.png');
     background-size: 100%;
     background-position: top;
     background-repeat: no-repeat;
@@ -94,7 +94,7 @@ body {
 
 .box {
     width: 68vh;
-    height: 85vh;
+    height: 50vh;
     border-radius: 14%;
     background-color: #adffad;
     display: flex;
