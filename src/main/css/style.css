@@ -20,40 +20,48 @@ body {
     background-position: top;
     background-repeat: no-repeat;
 }
-
-.header {
-    background: #d7ffd7;
-    color: #514040;
-    padding: 20px;
-    font-size: 30px;
-    line-height: 1.3;
-    text-align: center;
-    animation: fadeIn 1s ease-in-out forwards;
-}
 .nav {
+    background-image: url('/src/main/resources/sky.png');
+    background-size: cover; /* Sørger for at billedet fylder hele navbaren */
+    background-position: center; /* Sørger for at billedet er centreret */
     display: flex;
+    flex-direction: column; /* Sørger for at titlen og linksene ligger i kolonner */
     justify-content: center;
-    background: #adffad;
-    padding: 20px 10px;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
+    align-items: center;
+    min-height: 200px; /* Sætter en minimumshøjde på navbaren, så billedet kan vises korrekt */
+    padding: 400px 150px; /* Brug mindre padding for ikke at klippe billedet */
     z-index: 1000;
     animation: fadeIn 1s ease-in-out forwards;
 }
 
+.nav-title {
+    font-size: 36px; /* Gør teksten større */
+    font-weight: bold;
+    color: black; /* Hvid tekst for god kontrast */
+    margin-bottom: 20px; /* Skaber afstand mellem titlen og linksene */
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row; /* Viser linksene i en horisontal række */
+    gap: 15px; /* Skaber afstand mellem linksene */
+    justify-content: center; /* Centrerer linksene horisontalt */
+}
+
 .nav a {
-    color: #514040;
+    color: black; /* Ændrer tekstfarven til hvid for bedre synlighed */
     text-decoration: none;
     padding: 10px 20px;
+    font-size: 18px; /* Juster tekststørrelsen for bedre læsbarhed */
 }
+
 .nav a:hover {
-    background: #d7ffd7;
+    background: rgba(255, 255, 255, 0.6); /* Lysere baggrund ved hover */
     border-radius: 17%;
     transform: scale(110%);
     transition: background-color 0.4s ease, transform 0.4s ease;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .topMenu {
