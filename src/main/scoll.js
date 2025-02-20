@@ -1,5 +1,5 @@
 let lastScrollTop = 0; // Variable to store the last scroll position
-let scrollThreshold = 100; // Set the threshold to when the navbar and header will disappear
+let scrollThreshold =  450; // Set the threshold to when the navbar and header will disappear
 
 window.onscroll = function() {
     toggleVisibility();
