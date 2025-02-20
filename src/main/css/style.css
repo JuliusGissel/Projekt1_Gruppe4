@@ -94,7 +94,7 @@ body {
 
 .box {
     width: 68vh;
-    height: 80vh;
+    height: 85vh;
     border-radius: 14%;
     background-color: #adffad;
     display: flex;
@@ -170,4 +170,3 @@ body {
         transform: scale(1);
     }
 }
-
