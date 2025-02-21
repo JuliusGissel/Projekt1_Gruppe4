@@ -15,6 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #83dd1c;
     background-image:url('/src/main/resources/tree2.png');
     background-size: 100%;
     background-position: top;
