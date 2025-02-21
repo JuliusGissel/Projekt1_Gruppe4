@@ -20,6 +20,11 @@ body {
     background-position: top;
     background-repeat: no-repeat;
 }
+
+body.not-frontpage {
+    background: #77858c;
+}
+
 .nav {
     background-image: url('/src/main/resources/sky.png');
     background-size: cover; /* Sørger for at billedet fylder hele navbaren */
