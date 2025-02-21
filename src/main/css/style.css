@@ -27,42 +27,42 @@ body.not-frontpage {
 
 .nav {
     background-image: url('/src/main/resources/sky.png');
-    background-size: cover; /* Sørger for at billedet fylder hele navbaren */
-    background-position: center; /* Sørger for at billedet er centreret */
+    background-size: cover;
+    background-position: center;
     display: flex;
-    flex-direction: column; /* Sørger for at titlen og linksene ligger i kolonner */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 200px; /* Sætter en minimumshøjde på navbaren, så billedet kan vises korrekt */
-    padding: 400px 150px; /* Brug mindre padding for ikke at klippe billedet */
+    min-height: 200px;
+    padding: 400px 150px;
     z-index: 1000;
     animation: fadeIn 1s ease-in-out forwards;
 }
 
 .nav-title {
-    font-size: 36px; /* Gør teksten større */
+    font-size: 36px;
     font-weight: bold;
-    color: black; /* Hvid tekst for god kontrast */
-    margin-bottom: 20px; /* Skaber afstand mellem titlen og linksene */
+    color: black;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 .nav-links {
     display: flex;
-    flex-direction: row; /* Viser linksene i en horisontal række */
-    gap: 15px; /* Skaber afstand mellem linksene */
-    justify-content: center; /* Centrerer linksene horisontalt */
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
 }
 
 .nav a {
-    color: black; /* Ændrer tekstfarven til hvid for bedre synlighed */
+    color: black;
     text-decoration: none;
     padding: 10px 20px;
-    font-size: 18px; /* Juster tekststørrelsen for bedre læsbarhed */
+    font-size: 18px;
 }
 
 .nav a:hover {
-    background: rgba(255, 255, 255, 0.6); /* Lysere baggrund ved hover */
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 17%;
     transform: scale(110%);
     transition: background-color 0.4s ease, transform 0.4s ease;
@@ -70,21 +70,21 @@ body.not-frontpage {
 }
 
 .topMenu {
-    transition: transform 0.7s ease, opacity 0.7s ease; /* Smooth transition for both transform and opacity */
+    transition: transform 0.7s ease, opacity 0.7s ease;
 }
 
 .topMenu.hidden {
-    transform: translateY(-100%); /* Moves the navbar out of view */
+    transform: translateY(-100%);
     transition: transform 0.7s ease, opacity 0.7s ease;
-    opacity: 0; /* Optionally make it transparent */
+    opacity: 0;
 }
 
 .content {
-    flex: 1; /* Makes content take up all available space */
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-    align-items: center; /* Centers content horizontally */
+    justify-content: center;
+    align-items: center;
     padding: 8vh;
 }
 
